@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Gabi</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Gabi</a>
+ </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="perfil.png" alt="perfil">
+        </div>
+        <div class="home-content">
+            <h1>Oi,eu sou a <span>Gabi</span></h1>
+            <h3 class="typing-text">Sou <span>Programadora Front End</span></h3>
+            <p>Sou apaixonada por criar interfaces intuitivas e responsivas. Tenho experiência com HTML, CSS e JavaScript, e adoro transformar ideias em experiências digitais.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gabriela-lima-096405299/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gabizinharl"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/gabizinharl/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="https://wa.me/5521966705942" class="btn">Entre em contato</a>
+        </div>
+    </section>
+
+    <script>
+       let lastScrollTop = 0;
+const logo = document.querySelector('.logo');
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        logo.style.opacity = '0';
+    } else {
+        logo.style.opacity = '1';
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+    </script>
+</body>
+</html>
